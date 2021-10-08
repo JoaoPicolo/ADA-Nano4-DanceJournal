@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		C4237B87270F397C00045C52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4237B86270F397C00045C52 /* AppDelegate.swift */; };
 		C4237B89270F397C00045C52 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4237B88270F397C00045C52 /* SceneDelegate.swift */; };
-		C4237B8B270F397C00045C52 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4237B8A270F397C00045C52 /* ViewController.swift */; };
-		C4237B8E270F397C00045C52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4237B8C270F397C00045C52 /* Main.storyboard */; };
 		C4237B90270F397E00045C52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4237B8F270F397E00045C52 /* Assets.xcassets */; };
 		C4237B93270F397E00045C52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4237B91270F397E00045C52 /* LaunchScreen.storyboard */; };
+		C46CE94C27106B15006A33FC /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46CE94B27106B15006A33FC /* AuthViewController.swift */; };
+		C46CE956271074A5006A33FC /* Kreon-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C46CE951271074A5006A33FC /* Kreon-Bold.ttf */; };
+		C46CE95B27107A06006A33FC /* KulimPark-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C46CE95A27107A06006A33FC /* KulimPark-SemiBoldItalic.ttf */; };
+		D49A1CB6AAC7257A94E56D4A /* Pods_Dance_Journal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 379F78FFFD90AC9084750133 /* Pods_Dance_Journal.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		379F78FFFD90AC9084750133 /* Pods_Dance_Journal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dance_Journal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD866D101A2C241019385005 /* Pods-Dance Journal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dance Journal.release.xcconfig"; path = "Target Support Files/Pods-Dance Journal/Pods-Dance Journal.release.xcconfig"; sourceTree = "<group>"; };
 		C4237B83270F397C00045C52 /* Dance Journal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dance Journal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4237B86270F397C00045C52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4237B88270F397C00045C52 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C4237B8A270F397C00045C52 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C4237B8D270F397C00045C52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C4237B8F270F397E00045C52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4237B92270F397E00045C52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C4237B94270F397E00045C52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C46CE94B27106B15006A33FC /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		C46CE951271074A5006A33FC /* Kreon-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kreon-Bold.ttf"; sourceTree = "<group>"; };
+		C46CE95A27107A06006A33FC /* KulimPark-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KulimPark-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		DD471B4944BADB20CB3981DB /* Pods-Dance Journal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dance Journal.debug.xcconfig"; path = "Target Support Files/Pods-Dance Journal/Pods-Dance Journal.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D49A1CB6AAC7257A94E56D4A /* Pods_Dance_Journal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		034326CB304C78AF5AF4C916 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				379F78FFFD90AC9084750133 /* Pods_Dance_Journal.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BBD9CD44C3A455963193AED9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DD471B4944BADB20CB3981DB /* Pods-Dance Journal.debug.xcconfig */,
+				AD866D101A2C241019385005 /* Pods-Dance Journal.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C4237B7A270F397C00045C52 = {
 			isa = PBXGroup;
 			children = (
 				C4237B85270F397C00045C52 /* Dance Journal */,
 				C4237B84270F397C00045C52 /* Products */,
+				BBD9CD44C3A455963193AED9 /* Pods */,
+				034326CB304C78AF5AF4C916 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +82,64 @@
 		C4237B85270F397C00045C52 /* Dance Journal */ = {
 			isa = PBXGroup;
 			children = (
-				C4237B86270F397C00045C52 /* AppDelegate.swift */,
-				C4237B88270F397C00045C52 /* SceneDelegate.swift */,
-				C4237B8A270F397C00045C52 /* ViewController.swift */,
-				C4237B8C270F397C00045C52 /* Main.storyboard */,
+				C46CE94A27106AD8006A33FC /* Controllers */,
+				C46CE94927106ABF006A33FC /* Views */,
+				C46CE94827106AA3006A33FC /* Resources */,
 				C4237B8F270F397E00045C52 /* Assets.xcassets */,
-				C4237B91270F397E00045C52 /* LaunchScreen.storyboard */,
 				C4237B94270F397E00045C52 /* Info.plist */,
 			);
 			path = "Dance Journal";
+			sourceTree = "<group>";
+		};
+		C46CE94827106AA3006A33FC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C46CE94D2710744A006A33FC /* Fonts */,
+				C4237B86270F397C00045C52 /* AppDelegate.swift */,
+				C4237B88270F397C00045C52 /* SceneDelegate.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C46CE94927106ABF006A33FC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C4237B91270F397E00045C52 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C46CE94A27106AD8006A33FC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C46CE94B27106B15006A33FC /* AuthViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C46CE94D2710744A006A33FC /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C46CE959271076D6006A33FC /* Kulim Park */,
+				C46CE94E27107497006A33FC /* Kreon */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		C46CE94E27107497006A33FC /* Kreon */ = {
+			isa = PBXGroup;
+			children = (
+				C46CE951271074A5006A33FC /* Kreon-Bold.ttf */,
+			);
+			path = Kreon;
+			sourceTree = "<group>";
+		};
+		C46CE959271076D6006A33FC /* Kulim Park */ = {
+			isa = PBXGroup;
+			children = (
+				C46CE95A27107A06006A33FC /* KulimPark-SemiBoldItalic.ttf */,
+			);
+			path = "Kulim Park";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +149,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C4237B97270F397E00045C52 /* Build configuration list for PBXNativeTarget "Dance Journal" */;
 			buildPhases = (
+				DE9A5DC0486F2810B98E756B /* [CP] Check Pods Manifest.lock */,
 				C4237B7F270F397C00045C52 /* Sources */,
 				C4237B80270F397C00045C52 /* Frameworks */,
 				C4237B81270F397C00045C52 /* Resources */,
+				D6AD0D7BA850FED771E8C084 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,19 +203,62 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4237B93270F397E00045C52 /* LaunchScreen.storyboard in Resources */,
+				C46CE956271074A5006A33FC /* Kreon-Bold.ttf in Resources */,
+				C46CE95B27107A06006A33FC /* KulimPark-SemiBoldItalic.ttf in Resources */,
 				C4237B90270F397E00045C52 /* Assets.xcassets in Resources */,
-				C4237B8E270F397C00045C52 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D6AD0D7BA850FED771E8C084 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dance Journal/Pods-Dance Journal-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dance Journal/Pods-Dance Journal-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Dance Journal/Pods-Dance Journal-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE9A5DC0486F2810B98E756B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Dance Journal-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C4237B7F270F397C00045C52 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4237B8B270F397C00045C52 /* ViewController.swift in Sources */,
+				C46CE94C27106B15006A33FC /* AuthViewController.swift in Sources */,
 				C4237B87270F397C00045C52 /* AppDelegate.swift in Sources */,
 				C4237B89270F397C00045C52 /* SceneDelegate.swift in Sources */,
 			);
@@ -147,14 +267,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C4237B8C270F397C00045C52 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C4237B8D270F397C00045C52 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C4237B91270F397E00045C52 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -284,6 +396,7 @@
 		};
 		C4237B98270F397E00045C52 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD471B4944BADB20CB3981DB /* Pods-Dance Journal.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -294,7 +407,7 @@
 				INFOPLIST_FILE = "Dance Journal/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -312,6 +425,7 @@
 		};
 		C4237B99270F397E00045C52 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD866D101A2C241019385005 /* Pods-Dance Journal.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -322,7 +436,7 @@
 				INFOPLIST_FILE = "Dance Journal/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
