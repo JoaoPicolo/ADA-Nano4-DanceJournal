@@ -94,7 +94,10 @@ class AuthViewController: UIViewController {
             context.evaluatePolicy(.deviceOwnerAuthentication, localizedReason: reason ) { success, error in
 
                 if success {
-                    print("Logged in")
+                    DispatchQueue.main.async { [unowned self] in
+                        let tabBarController = TabBarViewController()
+                        navigationController?.setViewControllers([tabBarController], animated: true)
+                    }
 
                 } else {
                     print(error?.localizedDescription ?? "Failed to authenticate")

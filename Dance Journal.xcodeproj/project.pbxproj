@@ -11,9 +11,12 @@
 		C4237B89270F397C00045C52 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4237B88270F397C00045C52 /* SceneDelegate.swift */; };
 		C4237B90270F397E00045C52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4237B8F270F397E00045C52 /* Assets.xcassets */; };
 		C4237B93270F397E00045C52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4237B91270F397E00045C52 /* LaunchScreen.storyboard */; };
+		C4537B2C2715B40A00A26252 /* SequenceCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4537B2B2715B40A00A26252 /* SequenceCardView.swift */; };
 		C46CE94C27106B15006A33FC /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46CE94B27106B15006A33FC /* AuthViewController.swift */; };
 		C46CE956271074A5006A33FC /* Kreon-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C46CE951271074A5006A33FC /* Kreon-Bold.ttf */; };
 		C46CE95B27107A06006A33FC /* KulimPark-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C46CE95A27107A06006A33FC /* KulimPark-SemiBoldItalic.ttf */; };
+		C46CE95D27108C3B006A33FC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46CE95C27108C3B006A33FC /* HomeViewController.swift */; };
+		C4FA2B762714617400BD0D5E /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FA2B752714617400BD0D5E /* TabBarViewController.swift */; };
 		D49A1CB6AAC7257A94E56D4A /* Pods_Dance_Journal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 379F78FFFD90AC9084750133 /* Pods_Dance_Journal.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,9 +29,12 @@
 		C4237B8F270F397E00045C52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4237B92270F397E00045C52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C4237B94270F397E00045C52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4537B2B2715B40A00A26252 /* SequenceCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequenceCardView.swift; sourceTree = "<group>"; };
 		C46CE94B27106B15006A33FC /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		C46CE951271074A5006A33FC /* Kreon-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kreon-Bold.ttf"; sourceTree = "<group>"; };
 		C46CE95A27107A06006A33FC /* KulimPark-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KulimPark-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		C46CE95C27108C3B006A33FC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C4FA2B752714617400BD0D5E /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		DD471B4944BADB20CB3981DB /* Pods-Dance Journal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dance Journal.debug.xcconfig"; path = "Target Support Files/Pods-Dance Journal/Pods-Dance Journal.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,6 +110,7 @@
 		C46CE94927106ABF006A33FC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C4537B2B2715B40A00A26252 /* SequenceCardView.swift */,
 				C4237B91270F397E00045C52 /* LaunchScreen.storyboard */,
 			);
 			path = Views;
@@ -113,6 +120,8 @@
 			isa = PBXGroup;
 			children = (
 				C46CE94B27106B15006A33FC /* AuthViewController.swift */,
+				C46CE95C27108C3B006A33FC /* HomeViewController.swift */,
+				C4FA2B752714617400BD0D5E /* TabBarViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -261,6 +270,9 @@
 				C46CE94C27106B15006A33FC /* AuthViewController.swift in Sources */,
 				C4237B87270F397C00045C52 /* AppDelegate.swift in Sources */,
 				C4237B89270F397C00045C52 /* SceneDelegate.swift in Sources */,
+				C4FA2B762714617400BD0D5E /* TabBarViewController.swift in Sources */,
+				C4537B2C2715B40A00A26252 /* SequenceCardView.swift in Sources */,
+				C46CE95D27108C3B006A33FC /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
