@@ -10,40 +10,14 @@ import SnapKit
 import LocalAuthentication
 
 class AuthViewController: UIViewController {
-    /// An authentication context stored at class scope so it's available for use during UI updates.
-    var context = LAContext()
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        // The biometryType, which affects this app's UI when state changes, is only meaningful
-        //  after running canEvaluatePolicy
-        context.canEvaluatePolicy(.deviceOwnerAuthentication, error: nil)
-        
-        setupView()
-    }
-    
-    private func setupView() {
-        view.backgroundColor = UIColor(named: "appBackground")
-        setTitle()
-        setLoginButton()
-    }
-    
-    private func setTitle() {
-        let titleView = UIView()
-        view.addSubview(titleView)
-        titleView.snp.makeConstraints { make -> Void in
-            make.edges.equalTo(view).inset(UIEdgeInsets(top: 200, left: 18, bottom: 450, right: 18))
-        }
-
+    // Components
+    lazy private var appName: UIStackView = {
         let title = UILabel()
+        title.numberOfLines = 0
+        title.textAlignment = .center
         title.text = "Dance Journal"
         title.textColor = UIColor(named: "fontColor")
         title.font = UIFont(name: "Kreon-Bold", size: 54)
-        titleView.addSubview(title)
-        title.snp.makeConstraints { make -> Void in
-            make.edges.equalTo(titleView).inset(UIEdgeInsets(top: 20, left: 15, bottom: 100, right: 15))
-        }
         
         let subtitle = UILabel()
         subtitle.numberOfLines = 0
@@ -51,13 +25,15 @@ class AuthViewController: UIViewController {
         subtitle.textColor = UIColor(named: "fontColor")
         subtitle.text = "Transform your thoughts into movement"
         subtitle.font = UIFont(name: "KulimPark-SemiBoldItalic", size: 22)
-        titleView.addSubview(subtitle)
-        subtitle.snp.makeConstraints { make -> Void in
-            make.edges.equalTo(titleView).inset(UIEdgeInsets(top: 50, left: 30, bottom: 0, right: 30))
-        }
-    }
+
+        let titleView = UIStackView(arrangedSubviews: [title, subtitle])
+        titleView.axis = .vertical
+        titleView.spacing = 10
+        
+        return titleView
+    }()
     
-    private func setLoginButton() {
+    lazy private var loginButton: UIButton = {
         let loginButton = UIButton()
         loginButton.layer.cornerRadius = 10
         loginButton.backgroundColor = UIColor(named: "loginBackgroundColor")
@@ -69,15 +45,47 @@ class AuthViewController: UIViewController {
         loginButton.titleLabel?.font = UIFont.systemFont(ofSize: 20, weight: .semibold)
         
         loginButton.addTarget(self, action: #selector(handleAuthorizationAppleIDButtonPress), for: .touchUpInside)
+        
+        return loginButton
+    }()
+    
+    /// An authentication context stored at class scope so it's available for use during UI updates.
+    var context = LAContext()
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // The biometryType, which affects this app's UI when state changes, is only meaningful
+        //  after running canEvaluatePolicy
+        context.canEvaluatePolicy(.deviceOwnerAuthentication, error: nil)
+        
+        setupHierarchy()
+        setupConstraints()
+    }
+
+    private func setupHierarchy() {
+        view.backgroundColor = UIColor(named: "appBackground")
+        
+        view.addSubview(appName)
         view.addSubview(loginButton)
-        loginButton.snp.makeConstraints { make -> Void in
-            make.edges.equalTo(view).inset(UIEdgeInsets(top: 580, left: 15, bottom: 200, right: 15))
-        }
     }
     
-    @objc
-    func handleAuthorizationAppleIDButtonPress() {
+    private func setupConstraints() {
+        appName.snp.makeConstraints { make in
+            make.width.equalToSuperview()
+            make.top.equalTo(180)
+        }
+        
+        loginButton.snp.makeConstraints { make in
+            make.centerX.equalToSuperview()
+            make.width.equalToSuperview().offset(-50)
+            make.height.equalTo(50)
+            make.bottom.equalTo(-140)
+        }
+    }
+
+    
+    @objc func handleAuthorizationAppleIDButtonPress() {
         // Get a fresh context for each login. If you use the same context on multiple attempts
         //  (by commenting out the next line), then a previously successful authentication
         //  causes the next policy evaluation to succeed without testing biometry again.

@@ -9,7 +9,15 @@ import UIKit
 import SnapKit
 
 class SequenceCardView: UIView {
-    func setupView(imageWidth: CGFloat?, textSize: CGFloat) -> UIImageView {
+    private override init(frame: CGRect) {
+        super.init(frame: frame)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    func createSequenceCard(imageWidth: CGFloat?, textSize: CGFloat) -> UIImageView {
         let sequenceView = UIImageView()
         sequenceView.isUserInteractionEnabled = true
         sequenceView.layer.cornerRadius = 10
@@ -30,12 +38,16 @@ class SequenceCardView: UIView {
         sequenceView.addSubview(maskView)
         
         let maskText = UILabel()
+        maskText.numberOfLines = 0
+        maskText.textAlignment = .center
+        maskText.lineBreakMode = .byWordWrapping
         maskText.text = "St. Luis Dance Ballet"
         maskText.textColor = UIColor(named: "maskFontColor")
         maskText.font = UIFont(name: "KulimPark-SemiBoldItalic", size: textSize)
         maskView.addSubview(maskText)
         maskText.snp.makeConstraints { make -> Void in
-            make.centerY.centerX.equalTo(maskView)
+            make.center.equalToSuperview()
+            make.width.equalToSuperview().offset(-5)
         }
         
         return sequenceView

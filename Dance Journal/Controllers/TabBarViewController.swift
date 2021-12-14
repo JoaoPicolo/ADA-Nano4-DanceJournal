@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SnapKit
 
 class TabBarViewController: UITabBarController {
 
@@ -27,7 +28,10 @@ class TabBarViewController: UITabBarController {
         nav3.tabBarItem = UITabBarItem(title: "Profile", image: UIImage(systemName: "person"), tag: 1)
         
         self.tabBar.tintColor = UIColor(named: "tabColor")
-        self.tabBar.barTintColor = UIColor(named: "tabBackgroundColor")
+        self.tabBar.barTintColor = UIColor(named: "tabColor")
+        
+        self.tabBar.isTranslucent = false
+        self.tabBar.backgroundColor = UIColor(named: "tabBackgroundColor")
 
         setViewControllers([nav1, nav2, nav3], animated: false)
     }
